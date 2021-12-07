@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Prompt:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Balsamiq+Sans&family=Press+Start+2P&family=Prompt:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch the Numbers</title>
+</head>
+
+<body onload="init()">
+    <h1>Touch the Numbers</h1>
+    <h2 class="display-timer"></h2>
+    <div>
+        <div class="is-winner">
+            <h2 class="winner h2"></h2>
+            <img class="winner img">
+        </div>
+        <div class="table">
+            <table cellpadding="10">
+                <tbody class="table-body">
+                </tbody>
+            </table>
+        </div>
+        <button onclick="resetGame(this)" class="rst-btn">START OVER</button>
+
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+    color: white;
+    text-align: center;
+    background-color: rgba(188, 143, 143, 0.651);
+    font-family: 'Rampart One', cursive;
+}
+
+.game-board {
+    /* margin-bottom: 50px; */
+    margin-top: 5px;
+    padding-bottom: 8px;
+    margin: auto;
+    bottom: 15px;
+    height: fit-content;
+    width: 500px;
+    background-color: rgba(212, 208, 152, 0.747);
+    vertical-align: baseline;
+}
+
+.quest-img {
+    margin-top: 10px;
+    height: 180px;
+    width: 300px;
+    padding: 0;
+    border-radius: 20px;
+    border: darkcyan 3px solid;
+    transition-duration: 1s;
+}
+
+.opt {
+    background-color: rgba(226, 193, 193, 0.479);
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    margin-top: 15px;
+    bottom: 15px;
+    color: rgb(119, 115, 115);
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 50px;
+    /* vertical-align: auto; */
+    border-radius: 20px;
+    border: 2px solid darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.opt:hover {
+    cursor: pointer;
+    background-color: rgba(135, 207, 235, 0.5);
+}
+
+.correct {
+    background-color: rgba(14, 161, 14, 0.411);
+}
+
+.wrong {
+    background-color: rgba(209, 36, 51, 0.411);
+}
+
+.modal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 105, 198, 0.199);
+    text-align: center;
+    color: rgb(17, 16, 16);
+    font-size: 50px;
+    line-height: 250px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    width: fit-content;
+    background-color: rgb(102, 85, 85);
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(238, 236, 232);
+    padding: 0px, 1.5px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(188, 143, 143, 0.651);
+}

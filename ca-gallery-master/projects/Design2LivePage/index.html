@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/82af44d622.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <header class="main-header main-layout flex justify-center align-center">
+        <div class="main-header-content flex">
+            <div class="logo">Blogin</div>
+            <nav class="main-nav flex">
+                <ul class="main-nav-ul clean-list flex">
+                    <li class="align-center"><a href="#">Journal</a></li>
+                    <li class="align-center"><a href="#">About</a></li>
+                    <li class="align-center"><a href="#">Work</a></li>
+                    <li class="align-center"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="posts main-layout flex justify-center">
+        <div class="post posts-first flex main-content">
+            <img src="img/Clip-1.png" alt="" class="post-image">
+            <div class="post-info">
+                <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-p-1">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="post-p-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button onmouseover="addArrow(this)" onmouseout="cancelArrow(this)" class="post-btn">Continue Reading <span></span> </button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="img/Clip-2.png" alt="" class="post-image">
+            <div class="post-info">
+                <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-p-1">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="post-p-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button onmouseover="addArrow(this)" onmouseout="cancelArrow(this)" class="post-btn">Continue Reading <span></span> </button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="img/Clip-3.png" alt="" class="post-image">
+            <div class="post-info">
+                <h2 class="post-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="post-p-1">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="post-p-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... </p>
+                <button onmouseover="addArrow(this)" onmouseout="cancelArrow(this)" class="post-btn">Continue Reading<span></span></button>
+            </div>
+            <div class="post-bottom"></div>
+        </div>
+
+    </section>
+    <section class="prev-next flex">
+        <a class="previous  flex" href="#"><span>&#x2190;</span>Previous</a>
+        <a class="next  flex" href="#">Next<span>&#x2192;</span></a>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container main-layout">
+            <div class="footer-logo">Blogin<span>.</span> </div>
+            <p class="rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <strong>Pixelhint.com</strong></p>
+            <!-- <small class="rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <strong>Pixelhint.com</strong></small> -->
+            <div class="social flex justify-center">
+                <button>
+                    <i class="fab fa-facebook-square"></i>
+                </button>
+                <button>
+                    <i class="fab fa-twitter-square"></i>
+                </button>
+                <button>
+                    <i class="fab fa-behance-square"></i>
+            </button>
+                <button>
+                <i class="fab fa-dribbble-square"></i>
+            </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function addArrow(elBtn) {
+            elBtn.querySelector('span').innerHTML = `&nbsp&nbsp&#x2192;`;
+        }
+
+        function cancelArrow(elBtn) {
+            elBtn.querySelector('span').innerHTML = ``;
+        }
+    </script>
+</body>
+
+</html>

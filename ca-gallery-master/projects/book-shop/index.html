@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Book Store</title>
+</head>
+
+<body onload="onInit()">
+    <div>
+        <header>
+            <h1>Welcome to my bookshop</h1>
+        </header>
+        <section class="create-books">
+
+            <!-- <button onclick="onAddBook()" class="create-new-book">Create new book <button>+</button></button> -->
+            <p class="create"> Create new book <button class="add-book-btn" onclick="onAddBook()"> + </button></p>
+            <form class="create-book-modal">
+                <button onclick="onCloseCreateModal()" class="close-modal">x</button>
+                <input class="title-input" type="text" placeholder="Book Title">
+                <input class="price-input" type="number" placeholder="Price ($)">
+                <button onclick="onCreateBook()">create</button>
+                <!-- <div><input onsubmit="onSubmitForm()" type="submit" value="Submit"></div> -->
+            </form>
+
+        </section>
+        <section class="book-store-table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th colspan="3">Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+
+        <form class="update-modal">
+            <button onclick="onCloseUpdateModal()" class="close-modal" type="button">x</button>
+            <input class="title-input" type="text" placeholder="Book Title">
+            <input class="price-input" type="number" placeholder="Price ($)">
+            <div><button onsubmit="onSubmitForm()">Submit</button></div> -->
+            <!-- <div><input onsubmit="onSubmit()" type="submit" value="Submit"></div> -->
+        </form>
+
+
+
+        <section class="modal">
+            <button onclick="onCloseModal()" class="close-modal">x</button>
+            <h2></h2>
+            <!-- <p class="rate"></p> -->
+            <input class="rate" type="number" min="0" max="10">
+            <p class="price"></p>
+            <img>
+            <p class="desc"></p>
+        </section>
+    </div>
+
+    <script src="js/services/utils.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.service.js"></script>
+    <script src="js/book.controller.js"></script>
+</body>
+
+</html>

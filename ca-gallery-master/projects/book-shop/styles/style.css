@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    background-color: #e8f4fa;
+    background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png");
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', Arial, Helvetica, Sans-serif, Verdana;
+    overflow-x: hidden;
+}
+
+.add-book-btn {
+    background-color: rgba(153, 125, 125, 0.219);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.create {
+    margin-bottom: -1rem;
+    margin-left: -31.25rem;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 25px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin-left: 20%;
+}
+
+thead tr {
+    background-color: #75bedbbd;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 25px 30px;
+}
+
+tr {
+    background-color: #cbe0dd;
+    color: #444242;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #dbf0f1;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+td {
+    padding: 25px 30px;
+    font-size: 1.3rem;
+}
+
+.read,
+.update,
+.delete {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: -2px 3px 3px rgb(86 30 30); */
+    box-shadow: -4px 3px 6px 2px;
+    width: 7rem;
+    height: 3rem;
+}
+
+.read:hover,
+.update:hover,
+.delete:hover {
+    cursor: pointer;
+    background-color: #a56aa0a4;
+}
+
+.read {
+    background-color: #1d45c7;
+}
+
+.update {
+    background-color: #f1af45;
+}
+
+.delete {
+    background-color: #f14545;
+}
+
+.modal {
+    width: 20rem;
+    border: 2px black solid;
+    margin-top: -470px;
+    margin-left: 101%;
+    transition: 0.5s;
+}
+
+img {
+    width: 200px
+}
+
+.open {
+    margin-left: 75%;
+}
+
+.close-modal {
+    display: block;
+}
+
+.update-modal {
+    display: none;
+    width: 15rem;
+    border: 2px black solid;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.create-book-modal {
+    display: none;
+    width: fit-content;
+    /* border: 2px black solid; */
+    margin: auto;
+    transition: 0.5s;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    height: 2500px;
+    width: 250px;
+}
+
+.winner {
+    display: none;
+}

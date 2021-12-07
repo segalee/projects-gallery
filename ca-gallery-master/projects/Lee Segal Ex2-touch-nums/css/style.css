@@ -1,0 +1,129 @@
+body {
+    background-color: rgba(202, 195, 181, 0.438);
+    /* background-color: rgb(53, 51, 47); */
+    /* background-color: rgb(202, 195, 181); */
+}
+
+h1 {
+    color: rgb(58, 57, 54);
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.table-body td {
+    background-color: rgb(158, 150, 147);
+    /* background-color: rgb(49, 44, 42); */
+    border: rgb(95, 92, 92);
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    font-size: 30px;
+    border: rgb(158, 129, 129) 2px solid;
+    font-family: 'Alfa Slab One';
+}
+
+.table-body td:hover {
+    background-color: rgba(128, 120, 120, 0.445);
+    cursor: pointer;
+}
+
+.is-winner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rst-btn {
+    display: none;
+    /* display: block; */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    height: 30px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(161, 153, 138);
+}
+
+.rst-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.787);
+    color: rgb(131, 123, 108);
+    /* text-shadow: palegoldenrod; */
+}
+
+
+/* .is-winner {
+    display: none;
+} */
+
+
+/* h1 {
+    color: rgb(83, 190, 83);
+    color: rgb(218, 63, 76);
+    color: rgb(55, 182, 214);
+    color: rgb(223, 202, 86);
+    color: rgb(240, 178, 62);
+} */
+
+.level {
+    margin-top: 5px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(161, 153, 138);
+}
+
+.one {
+    background-color: rgb(111, 182, 211);
+}
+
+.two {
+    background-color: rgb(204, 211, 111);
+}
+
+.three {
+    background-color: rgb(244, 75, 49);
+}
+
+.four {
+    background-color: black;
+}
+
+.level:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.787);
+}
+
+
+/* 
+    td {
+        background-color: rgb(158, 150, 147);
+        border: rgb(95, 92, 92);
+        border-radius: 8px;
+    } */
