@@ -3,7 +3,7 @@ var gProjs;
 
 _createProjs();
 
-function getBooks() {
+function getProjs() {
     var projs = gProjs;
     return projs;
 }
@@ -18,7 +18,8 @@ function getProjById(projId) {
 function _createProj(
     name = 'Sokoban',
     title = 'Better push those boxes',
-    url = 'img/portfolio/01-full.jpg'
+    url = 'img/portfolio/01-full.jpg',
+    link = 'project/proj.html'
 ) {
     return {
         id: makeId(),
@@ -26,8 +27,9 @@ function _createProj(
         title,
         desc: makeLorem(),
         url,
-        publishedAt: 1448693940000,
+        publishedAt: 2021,
         labels: ['Matrixes', 'keyboard events'],
+        link,
     };
 }
 
