@@ -6,6 +6,7 @@ $(onInit);
 
 function onInit() {
     renderProjs();
+    contact();
     // renderModal();
 }
 
@@ -50,6 +51,22 @@ function renderModal(id) {
             <li>Client: Threads</li>
             <li>Category: ${currProj.labels}</li>
         </ul>
+        <a href=${currProj.link}>Go Visit!</a>
         `;
     $('.my-modals').html(strHtmls);
+}
+
+function contact() {
+    $('form .btn-mail').click(() => {
+        var email = $('.mail').val();
+        var subject = $('.subject').val();
+        var msg = $('.msg').val();
+        window.open(
+            `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${msg}`
+        );
+        $('.mail').val('');
+        $('.subject').val('');
+        $('.msg').val('');
+        $('.aside').removeClass('offcanvas-aside-open');
+    });
 }

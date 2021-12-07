@@ -37,35 +37,50 @@ function _createProjs() {
     if (!projs) {
         projs = [];
         const proj1 = _createProj(
-            'Mines Sweeper',
-            'Watch those Mines',
-            'img/proj/mines.PNG'
-        );
-        const proj2 = _createProj(
-            'Book Store',
-            'Fun in the Library',
-            'img/proj/bookstore.PNG'
-        );
-        const proj3 = _createProj(
-            "What's in Picture",
-            'Find The Differences',
-            'img/proj/inpic.PNG'
-        );
-        const proj4 = _createProj(
-            'Pacman',
-            'Watch those Mines',
-            'img/proj/pacman.PNG'
-        );
-        const proj5 = _createProj(
-            'todo',
-            'What Do You Want todo Today?',
-            'img/proj/todo.PNG'
-        );
-        const proj6 = _createProj(
             'Touch Nums',
             'Touch the Nums',
-            'img/proj/touchnums.PNG'
+            'img/proj/touchnums.PNG',
+            'projects/nums/index.html'
         );
+        const proj2 = _createProj(
+            'Mines Sweeper',
+            'Watch those Mines',
+            'img/proj/mines.PNG',
+            'projects/minesweeper/index.html'
+        );
+        const proj3 = _createProj(
+            'Pacman',
+            'Watch those Mines',
+            'img/proj/pacman.PNG',
+            'projects/pacman/index.html'
+        );
+        const proj4 = _createProj(
+            'Book Store',
+            'Fun in the Library',
+            'img/proj/bookstore.PNG',
+            'projects/bookshop/index.html'
+        );
+
+        const proj5 = _createProj(
+            'Guess Who',
+            'Think of someone...',
+            'img/proj/guess.PNG',
+            'projects/guess/index.html'
+        );
+
+        const proj6 = _createProj(
+            "What's in Picture",
+            'Find The Differences',
+            'img/proj/inpic.PNG',
+            'projects/inpic/index.html'
+        );
+
+        // const proj5 = _createProj(
+        //     'Guess Who',
+        //     'What Do You Want todo Today?',
+        //     'img/proj/guess.PNG',
+        //     'projects/guess/index.html'
+        // );
 
         projs.push(proj1, proj2, proj3, proj4, proj5, proj6);
     }

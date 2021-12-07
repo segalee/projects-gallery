@@ -30,28 +30,26 @@
         <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
     <aside class="offcanvas-aside">
-
         <!-- Contact -->
         <section id="contact">
-            <form action="/action_page.php">
-                <h4>Contact Me</h4>
-                <div>
-                    <label for="email">Your E-mail</label>
-                    <input type="email" spaceholder="name@example.com" id="email" name="email">
-                </div>
-                <div>
-                    <label for="text">Subject</label>
-                    <input type="text" spaceholder="Type subject here">
-                </div>
-                <div>
-                    <label for="textarea">Message Body</label>
-                    <textarea name="textarea" spaceholder="Type message text here" cols="30" rows="5"></textarea>
-                </div>
-                <input type="submit" value="Submit">
 
+            <h4>Contact Me</h4>
+            <form>
+                <div>
+                    <label for="email" class="form-label">Your E-mail address</label>
+                    <input type="mail" class="mail form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div>
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="subject form-control" id="subject" placeholder="Type subject here">
+                </div>
+                <div>
+                    <label for="message" class="form-label">Message Body</label>
+                    <textarea class="msg form-control" id="message" rows="4" placeholder="   Type message text here"></textarea>
+                </div>
+                <button type="button" class="btn-mail btn btn-primary">Submit</button>
             </form>
         </section>
-
     </aside>
 
     <!-- Navigation -->
