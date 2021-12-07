@@ -5,12 +5,8 @@ console.log('Starting up');
 $(onInit);
 
 function onInit() {
-    //     $('.btn-add-car').click(onAddCar)
-    //     $('.btn-next-page').click(onNextPage)
-    //     $('.btn-close').click(onCloseModal)
     renderProjs();
-    renderModals();
-    //     renderVendors();
+    // renderModal();
 }
 
 function renderProjs() {
@@ -18,7 +14,7 @@ function renderProjs() {
     var strHtmls = projs.map(function(proj) {
         return `
         <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <a onclick="onOpenModal('${proj.id}')" class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -36,10 +32,14 @@ function renderProjs() {
     $('.my-projs').html(strHtmls);
 }
 
-function renderModals() {
+function onOpenModal(id) {
+    renderModal(id);
+}
+
+function renderModal(id) {
     var projs = getProjs();
-    var currProj = getProjById(projId);
-    var strHtmls = projs.map(function(proj) {
+    var strHtmls = projs.map(function(currProj) {
+        var currProj = getProjById(id);
         return `
         <h2>${currProj.name}</h2>
         <p class="item-intro text-muted">${currProj.title}</p>

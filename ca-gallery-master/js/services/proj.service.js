@@ -4,8 +4,7 @@ var gProjs;
 _createProjs();
 
 function getProjs() {
-    var projs = gProjs;
-    return projs;
+    return gProjs;
 }
 
 function getProjById(projId) {
