@@ -37,10 +37,10 @@ function onOpenModal(id) {
 }
 
 function renderModal(id) {
-    var projs = getProjs();
-    var strHtmls = projs.map(function(currProj) {
-        var currProj = getProjById(id);
-        return `
+    // var projs = getProjs();
+    var strHtmls;
+    var currProj = getProjById(id);
+    var strHtmls = `
         <h2>${currProj.name}</h2>
         <p class="item-intro text-muted">${currProj.title}</p>
         <img class="img-fluid d-block mx-auto" src=${currProj.url} alt="">
@@ -51,6 +51,5 @@ function renderModal(id) {
             <li>Category: ${currProj.labels}</li>
         </ul>
         `;
-    });
     $('.my-modals').html(strHtmls);
 }
