@@ -215,7 +215,7 @@ body {
 header.masthead {
     text-align: center;
     color: rgb(31, 39, 143);
-    background-image: url("../img/header.JPG");
+    background-image: url("..img/header.JPG");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
